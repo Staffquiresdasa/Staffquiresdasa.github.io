@@ -1,0 +1,74 @@
+html body[data-header-resize="1"] .container-wrap,
+html body[data-header-format="left-header"][data-header-resize="0"] .container-wrap,
+html body[data-header-resize="0"] .container-wrap,
+body[data-header-format="left-header"][data-header-resize="0"] .container-wrap {
+    padding-top: 0;
+}
+
+.main-content > .row > #breadcrumbs.yoast {
+    padding: 20px 0;
+}
+
+html:not(.page-trans-loaded) {
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 999px) {
+    #ajax-content-wrap .top-level .nectar-post-grid[data-animation*="fade"] .nectar-post-grid-item, #ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item *:not(.content), #ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item *:before {
+        transform: none;
+        opacity: 1;
+        clip-path: none;
+    }
+
+    #ajax-content-wrap .top-level .nectar-post-grid[data-animation="zoom-out-reveal"] .nectar-post-grid-item .nectar-el-parallax-scroll .nectar-post-grid-item-bg-wrap-inner {
+        transform: scale(1.275);
+    }
+}
+
+.wpb_row.vc_row.top-level .nectar-video-bg {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+body.using-mobile-browser .wpb_row.vc_row.top-level .nectar-video-wrap {
+    left: 0;
+}
+
+body.using-mobile-browser .wpb_row.vc_row.top-level.full-width-section .nectar-video-wrap:not(.column-video) {
+    left: 50%;
+}
+
+.wpb_row.vc_row.top-level .nectar-video-wrap {
+    opacity: 1;
+    width: 100%;
+}
+
+.top-level .portfolio-items[data-loading=lazy-load] .col .inner-wrap.animated .top-level-image {
+    opacity: 1;
+}
+
+.wpb_row.vc_row.top-level .column-image-bg-wrap[data-n-parallax-bg="true"] .column-image-bg, .wpb_row.vc_row.top-level + .wpb_row .column-image-bg-wrap[data-n-parallax-bg="true"] .column-image-bg, #portfolio-extra > .wpb_row.vc_row.parallax_section:first-child .row-bg {
+    transform: none !important;
+    height: 100% !important;
+    opacity: 1;
+}
+
+#portfolio-extra > .wpb_row.vc_row.parallax_section .row-bg {
+    background-attachment: scroll;
+}
+
+.scroll-down-wrap.hidden {
+    transform: none;
+    opacity: 1;
+}
+
+#ajax-loading-screen[data-disable-mobile="0"] {
+    display: none !important;
+}
+
+body[data-slide-out-widget-area-style="slide-out-from-right"].material .slide_out_area_close.hide_until_rendered {
+    opacity: 0;
+}
